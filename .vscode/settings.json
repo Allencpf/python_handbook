@@ -1,0 +1,93 @@
+{
+    "python.pythonPath": "/Users/cpf/miniconda3/envs/tfpy3/bin/python",
+    "python.linting.enabled": true,
+    "python.linting.flake8Enabled": true,
+    "python.formatting.provider": "autopep8",
+    "python.linting.flake8Args": [
+        "--max--line-length=248"
+    ],
+    "python.linting.pylintEnabled": false,
+    "python.dataScience.jupyterServerURI": "local",
+    "python.testing.pytestEnabled": false,
+    "python.testing.pytestPath": "${workspaceRoot}/.venv/bin/pytest",
+    "tabout.disableByDefault": false,
+    //"python.jediEnabled": false,
+    "python.testing.pytestArgs": [
+        "chapter1"
+    ],
+    "python.testing.unittestEnabled": true,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "./chapter1",
+        "-p",
+        "test*.py"
+    ],
+    //todo-tree settings
+    "todo-tree.regex.regex": "((//|#|<!--|;|/\\*|^)\\s*($TAGS):|^\\s*- \\[ \\])",
+    "todo-tree.general.tags": [
+        "TODO",
+        "FIXME",
+        "tag",
+        "done",
+        "note"
+    ],
+    "todo-tree.regex.regexCaseSensitive": false,
+    "todo-tree.tree.showInExplorer": true,
+    "todo-tree.highlights.defaultHighlight": {
+        "foreground": "white",
+        "background": "yellow",
+        "icon": "check",
+        "rulerColour": "yellow",
+        "type": "tag",
+        "iconColour": "yellow"
+    },
+    "todo-tree.highlights.customHighlight": {
+        "todo": {
+            "background": "yellow",
+            "rulerColour": "yellow",
+            "iconColour": "yellow"
+        },
+        "FIXME": {
+            "background": "red",
+            "icon": "beaker",
+            "rulerColour": "red",
+            "iconColour": "red",
+        },
+        "tag": {
+            "background": "blue",
+            "icon": "tag",
+            "rulerColour": "blue",
+            "iconColour": "blue",
+            "rulerLane": "full"
+        },
+        "done": {
+            "background": "green",
+            "icon": "issue-closed",
+            "rulerColour": "green",
+            "iconColour": "green",
+        },
+        "note": {
+            "background": "#f90",
+            "icon": "note",
+            "rulerColour": "#f90",
+            "iconColour ": "#f90"
+        },
+        // todo settings end
+        //"python.analysis.disabled":["unresolved-import"]
+       
+    },
+    // markdown all in one
+    "markdown.extension.toc.omittedFromToc": {
+        // Use a path relative to your workspace.
+        "README.md": [
+            "# Introduction",
+            "## Also omitted",
+        ],
+        // Or an absolute path for standalone files.
+        "/home/foo/Documents/todo-list.md": [
+          "## Shame list (I'll never do these)",
+        ]
+    }
+}
