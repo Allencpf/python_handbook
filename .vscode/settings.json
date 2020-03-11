@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "/usr/local/bin/python3.7",
+    "python.pythonPath": "/Users/cpf/miniconda3/envs/tfpy3/bin/python",
     "python.linting.enabled": true,
     "python.linting.flake8Enabled": true,
     "python.formatting.provider": "autopep8",
