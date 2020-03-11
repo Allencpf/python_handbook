@@ -1,1 +1,4 @@
 __pycache__/
+pythonrumen/bookcode
+.vscode
+.pytest_cache

@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "/Users/cpf/miniconda3/envs/tfpy3/bin/python",
+    "python.pythonPath": "/usr/local/bin/python3.7",
     "python.linting.enabled": true,
     "python.linting.flake8Enabled": true,
     "python.formatting.provider": "autopep8",
@@ -8,22 +8,9 @@
     ],
     "python.linting.pylintEnabled": false,
     "python.dataScience.jupyterServerURI": "local",
-    "python.testing.pytestEnabled": false,
-    "python.testing.pytestPath": "${workspaceRoot}/.venv/bin/pytest",
     "tabout.disableByDefault": false,
-    //"python.jediEnabled": false,
-    "python.testing.pytestArgs": [
-        "chapter1"
-    ],
-    "python.testing.unittestEnabled": true,
-    "python.testing.nosetestsEnabled": false,
-    "python.testing.unittestArgs": [
-        "-v",
-        "-s",
-        "./chapter1",
-        "-p",
-        "test*.py"
-    ],
+    "python.jediEnabled": true,
+    
     //todo-tree settings
     "todo-tree.regex.regex": "((//|#|<!--|;|/\\*|^)\\s*($TAGS):|^\\s*- \\[ \\])",
     "todo-tree.general.tags": [
@@ -76,7 +63,6 @@
         },
         // todo settings end
         //"python.analysis.disabled":["unresolved-import"]
-       
     },
     // markdown all in one
     "markdown.extension.toc.omittedFromToc": {
@@ -87,7 +73,21 @@
         ],
         // Or an absolute path for standalone files.
         "/home/foo/Documents/todo-list.md": [
-          "## Shame list (I'll never do these)",
+            "## Shame list (I'll never do these)",
         ]
-    }
+    },
+    "python.testing.pytestEnabled": true,
+    //"python.testing.cwd": "path/to/myproject",
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        ".",
+        "-p",
+        "test_*.py"
+    ],
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestArgs": [
+        "."
+    ]
 }

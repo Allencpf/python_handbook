@@ -1,4 +1,4 @@
-#!/usr/local/bin/python3.7
+
 import pygame
 from pygame.sprite import Sprite
 
